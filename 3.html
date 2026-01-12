@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CourseHub</title>
+    <link rel="stylesheet" href="3.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <div class="logo">EduTech</div>
+        <nav>
+            <ul>
+                <li><a href="#">Explore</a></li>
+                <li><a href="#">Categories</a></li>
+                <li><a href="#" class="btn">Join for Free</a></li>
+            </ul>
+        </nav>
+        <div class="auth-buttons">
+            <a href="#" class="btn-login" onclick="openLoginPopup()">Login</a>
+        </div>
+    </header>
+
+    <!-- Login Pop-Up -->
+    <div id="login-popup" class="popup">
+        <div class="popup-content">
+            <span class="close-btn" onclick="closeLoginPopup()">&times;</span>
+            <h2>Login</h2>
+            <input type="text" id="login-username" placeholder="Username"><br>
+            <input type="password" id="login-password" placeholder="Password"><br>
+            <button type="submit" class="btn-primary">Login</button>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <h1>Start Learning with Free Courses</h1>
+        <p>Explore free online courses from top universities and companies.</p>
+        <input type="text" id="search" placeholder="Search for courses..." onkeyup="searchCourses()">
+    </section>
+
+    <!-- Popular Courses -->
+    <section class="courses">
+        <h2>Popular Free Courses</h2>
+        <div class="course-container">
+
+            <div class="course">
+                <img src="image.png" alt="Hugging Face Course">
+                <h3>Open Source Models with Hugging Face</h3>
+                <p>DeepLearning.AI</p>
+                <button class="btn">Show More</button>
+                <span class="tag">Free</span>
+            </div>
+            
+            <div class="course">
+                <img src="image copy.png" alt="Llama 3.2">
+                <h3>Introducing Multimodal Llama 3.2</h3>
+                <p>DeepLearning.AI</p>
+                <button class="btn">Show More</button>
+                <span class="tag">Free</span>
+            </div>
+
+            <div class="course">
+                <img src="image copy 2.png" alt="Excel Course">
+                <h3>Business Analytics with Excel</h3>
+                <p>Johns Hopkins University</p>
+                <button class="btn">Show More</button>
+                <span class="tag">Free</span>
+            </div>
+
+            <div class="course">
+                <img src="image copy 3.png" alt="Well-being Course">
+                <h3>The Science of Well-Being</h3>
+                <p>Yale University</p>
+                <button class="btn">Show More</button>
+                <span class="tag">Free</span>
+            </div>
+
+            <div class="course">
+                <img src="image copy 4.png" alt="Python Course">
+                <h3>Python for Everybody</h3>
+                <p>University of Michigan</p>
+                <button class="btn">Show More</button>
+                <span class="tag">Free</span>
+            </div>
+
+            <div class="course">
+                <img src="image copy 5.png" alt="Cloud Computing Course">
+                <h3>Cloud Computing Fundamentals</h3>
+                <p>Google Cloud</p>
+                <button class="btn">Show More</button>
+                <span class="tag">Free</span>
+            </div>
+
+            <div class="course">
+                <img src="image copy 6.png" alt="AI Course">
+                <h3>Artificial Intelligence for Beginners</h3>
+                <p>Stanford University</p>
+                <button class="btn">Show More</button>
+                <span class="tag">Free</span>
+            </div>
+
+            <div class="course">
+                <img src="image copy 7.png" alt="Web Development">
+                <h3>Full Stack Web Development</h3>
+                <p>Harvard University</p>
+                <button class="btn">Show More</button>
+                <span class="tag">Free</span>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Categories -->
+    <section class="categories">
+        <h2 class="category-heading">Browse by Category</h2>
+        <div class="category-list">
+            <div class="category">Technology</div>
+            <div class="category">Business</div>
+            <div class="category">Health</div>
+            <div class="category">Data Science</div>
+            <div class="category">Personal Development</div>
+            <div class="category">Finance</div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials">
+        <h2>What Our Learners Say</h2>
+        <div class="testimonial-container">
+            <div class="testimonial">
+                <p>"The courses are fantastic! I have learned so much in just a few months."</p>
+                <h4>- Alex Johnson</h4>
+            </div>
+            <div class="testimonial">
+                <p>"The best online learning platform! The content is high-quality and engaging."</p>
+                <h4>- Priya Sharma</h4>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 CourseHub. All rights reserved.</p>
+    </footer>
+
+    <script src="3.js"></script>
+
+</body>
+</html>

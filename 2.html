@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EduTech</title>
+    <link rel="stylesheet" href="2.css">
+   
+</head>
+
+<body>
+    <nav class="navbar">
+        <h1>EduTech</h1>
+    </nav>
+
+    <div class="features">
+        <!-- AI Tutor Assistant Section -->
+        <div class="card">
+            <h3>AI Tutor Assistant</h3>
+            <p>24/7 personalized learning support</p>
+            <div class="chat-window" id="chatWindow">
+                <div class="message ai">Hello! How can I help you today?</div>
+            </div>
+            <textarea id="userQuery" placeholder="Ask a question..."></textarea><br>
+            <button onclick="getAIResponse()">Ask</button>
+        </div>
+
+        <!-- Virtual Classroom Section -->
+        <div class="card">
+            <h3>Virtual Classroom</h3>
+            <div class="virtual-classroom">
+                <div class="grid-overlay"></div> <!-- Hollow grid overlay -->
+
+                <!-- Background Image -->
+                <img src="istockphoto-1349104991-1024x1024.jpg" class="classroom-image" alt="Classroom Scene">
+
+                <div class="avatar"></div>
+                <div class="avatar second"></div>
+                <div class="live-badge">Live</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- VR Science Lab Section -->
+    <div class="vr-lab">
+        <h3>VR Science Lab</h3>
+        <div class="ar-overlay">
+            <div class="ar-content">
+                <h4>Interactive DNA Model</h4>
+                <p>Rotate and explore molecular structures</p>
+            </div>
+        </div>
+        <button class="vr-btn">Start Experiment</button>
+    </div>
+
+    <!-- Learning Progress Section -->
+    <div class="card">
+        <h3>Learning Progress</h3>
+        <div class="progress-container">
+            <div class="progress-bar">
+                <div class="progress" id="progress-bar"></div>
+            </div>
+            <span id="progress-text">0% Complete</span>
+        </div>
+        <div class="stats">
+            <p id="level-text">Level: __</p>
+            <p id="points-text">Points: __</p>
+        </div>
+    </div>
+
+    <script src="2.js"></script>
+</body>
+
+</html>

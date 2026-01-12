@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EduTech</title>
+    <link rel="stylesheet" href="edu.css">
+</head>
+
+<body>
+    <div id="welcomeMessage" class="welcome-message">Welcome to the World of Education</div>
+
+    <header>
+        <div class="logo">
+            <img src="EduTech logo.png" alt="EduTech Logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="2.html">Home</a></li>
+                <li><a href="1.html">Features</a></li>
+                <li><a href="3.html">Courses</a></li>
+                <li><a href="#events">Events</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="search-bar">
+            <input type="text" placeholder="Search">
+        </div>
+        <div class="auth-buttons">
+            <a href="#" class="btn-login">Login</a>
+            <a href="#" class="btn-signup">Sign Up</a>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="overlay"></div>
+        <div class="content">
+            <h1>EduTech</h1><br>
+            <h3>Transform Learning Experiences Through Technology</h3><br>
+            <p>"EduTech offers AI-powered tutoring, virtual classrooms, gamified learning, and AR/VR educational tools
+                to enhance education accessibility and quality."</p>
+        </div>
+    </section>
+
+    <section class="features">
+        <div class="feature">
+            <i class="fas fa-laptop-code fa-3x"></i>
+            <h3>AI Tutoring</h3>
+            <p>Personalized learning experiences powered by artificial intelligence.</p>
+        </div>
+        <div class="feature">
+            <i class="fas fa-chalkboard-teacher fa-3x"></i>
+            <h3>Virtual Classrooms</h3>
+            <p>Engaging and interactive online classes for all learners.</p>
+        </div>
+        <div class="feature">
+            <i class="fas fa-vr-cardboard fa-3x"></i>
+            <h3>AR/VR Learning</h3>
+            <p>Immersive learning experiences using the latest technology.</p>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services">
+        <h2>Our Services</h2>
+        <div class="service">
+            <h3>Online Courses</h3>
+            <p>Explore a variety of online courses taught by industry experts.</p>
+        </div>
+        <div class="service">
+            <h3>Certification Programs</h3>
+            <p>Get certified and boost your career with our accredited programs.</p>
+        </div>
+        <div class="service">
+            <h3>One-on-One Mentorship</h3>
+            <p>Personalized mentorship sessions to help you achieve your learning goals.</p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>Have any questions? Get in touch with us!</p>
+        <form id="contact-form">
+            <input type="text" id="name" placeholder="Your Name" required><br>
+            <input type="email" id="email" placeholder="Your Email" required><br>
+            <textarea id="message" placeholder="Your Message" required></textarea><br>
+            <button type="submit" class="btn-primary">Send Message</button>
+        </form>
+    </section>
+
+    <div id="loginModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('loginModal')">&times;</span>
+            <h2>Login</h2>
+            <form id="login-form">
+                <input type="text" id="login-username" placeholder="Username"><br>
+                <input type="password" id="login-password" placeholder="Password"><br>
+                <button type="submit" class="btn-primary">Login</button>
+            </form>
+            <div class="register-link">
+                Don't have an account? <a href="#" id="register-link">Register here</a>
+            </div>
+        </div>
+    </div>
+
+    <div id="signupModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('signupModal')">&times;</span>
+            <h2>Register</h2>
+            <form id="register-form">
+                <input type="text" id="register-username" placeholder="Username"><br>
+                <input type="email" id="register-email" placeholder="Email"><br>
+                <input type="password" id="register-password" placeholder="Password"><br>
+                <button type="submit" class="btn-primary">Register</button>
+            </form>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 EduTech. All Rights Reserved.</p>
+    </footer>
+
+    <script src="edu.js"></script>
+</body>
+
+</html>

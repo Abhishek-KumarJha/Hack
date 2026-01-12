@@ -1,0 +1,59 @@
+/* styles.css */
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    font-family: Arial, sans-serif;
+    background: url('istockphoto-1344939844-1024x1024.jpg') no-repeat center center/cover;
+    color: white;
+    text-align: center;
+    overflow-x: hidden;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    min-height: 100vh;
+    background: rgba(0, 0, 0, 0.6);
+    padding: 20px;
+    box-sizing: border-box;
+    overflow-y: auto;
+}
+h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+.section {
+    width: 90%;
+    max-width: 900px;
+    margin: 20px 0;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+}
+.section h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+.section p {
+    font-size: 1.2em;
+    line-height: 1.5;
+}
+@media (max-width: 768px) {
+    .section {
+        width: 95%;
+        padding: 15px;
+    }
+    h1 {
+        font-size: 2.5em;
+    }
+    .section h2 {
+        font-size: 1.8em;
+    }
+    .section p {
+        font-size: 1.1em;
+    }
+}
